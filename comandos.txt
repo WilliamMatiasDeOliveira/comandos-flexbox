@@ -1,5 +1,6 @@
-
+/********************************************************************/
 /****************  COMANDOS APLICADOS NO PAI  ***********************/
+/**********************************************************************/
 
 "Para deixar o pai flexivel podendo posicionar tanto em linha ou coluna"
     display-flex = flex | block
@@ -26,7 +27,9 @@
 "É semelhante a align-items, mas em vez de alinhar itens, ela alinha as linhas."
     align-content = stretch(Padrão) | center | flex-start | flex-end | apace-around | space-brteween | space-evenly
 
+/***********************************************************/
 /*************** COMANDOS APLICADOS NOS FILHOS **************/
+/************************************************************/
 
 "A propriedade order pode alterar a ordem dos itens"
     order = (adicione o número da ordem do item)
@@ -50,3 +53,7 @@
 "A flex é uma abreviação para as propriedades flex-grow, flex-shrink flex-basis."
     flex: (flex-grow) (flex-shrink) (flex-basis)
     flex: 0 0 200px // Faça o item flexível não crescer (0), não encolher (0) e com um comprimento inicial de 200 pixels:
+
+"A align-self especifica o alinhamento do item selecionado dentro do contêiner flexível."
+"A align-self substitui o alinhamento padrão definido pela propriedade do contêiner align-items."
+    align-self: auto(Padrão) | flex-start | flex-end | center | baseline | stretch
