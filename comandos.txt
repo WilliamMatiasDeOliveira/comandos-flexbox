@@ -2,37 +2,44 @@
 /****************  COMANDOS APLICADOS NO PAI  ***********************/
 
 "Para deixar o pai flexivel podendo posicionar tanto em linha ou coluna"
-display-flex = flex | block
+    display-flex = flex | block
 
 "Para criar uma margem em volta dos filhos"
-gap: ?px
+    gap: ?px
 
 "Especifica a direção de exibição dos itens no contêiner flexível."
-flex-direction = row(Padrão) | column | row-reverse | column-reverse
+    flex-direction = row(Padrão) | column | row-reverse | column-reverse
 
 "especifica se os itens flexíveis devem ser quebrados ou não, caso não haja espaço suficiente para eles"
-flex-wrap = nowrap(Padrão) | wrap | wrap-reverse
+    flex-wrap = nowrap(Padrão) | wrap | wrap-reverse
 
 "É uma propriedade abreviada para definir as propriedades flex-direction e flex-wrap."
-flex-flow = (Propriedae do direction)  (propriedade do wrap)
-flex-flow = row wrap
+    flex-flow = (Propriedae do direction)  (propriedade do wrap)
+    flex-flow = row wrap
 
 "É usada para alinhar os itens quando eles não usam todo o espaço disponível no eixo principal (horizontalmente)."
-justify-content = flex-start(Padrão) | center | flex-end | space-around | space-beteween | space-evenly
+    justify-content = flex-start(Padrão) | center | flex-end | space-around | space-beteween | space-evenly
 
 "É usada para alinhar os itens quando eles não usam todo o espaço disponível no eixo cruzado (verticalmente)."
-align-items = stretch(Padrão) | flex-start | center | flex-end | baseline | normal
+    align-items = stretch(Padrão) | flex-start | center | flex-end | baseline | normal
 
 "É semelhante a align-items, mas em vez de alinhar itens, ela alinha as linhas."
-align-content = stretch(Padrão) | center | flex-start | flex-end | apace-around | space-brteween | space-evenly
+    align-content = stretch(Padrão) | center | flex-start | flex-end | apace-around | space-brteween | space-evenly
 
 /*************** COMANDOS APLICADOS NOS FILHOS **************/
 
 "A propriedade order pode alterar a ordem dos itens"
-order = (adicione o número da ordem do item)
-order: 2;
-order: 4;
+    order = (adicione o número da ordem do item)
+    order: 2;
+    order: 4;
 
-"A propriedade determina o quanto um item deve ser maior que os outros"
-flex-grow: 0(Padrão)
-flex-grow: 3 //este item tera 3 vezes o tamnho do item que tiver o valor 1
+"O flex-grow define quanto um item pode crescer dentro de um container display: flex; quando há espaço sobrando"
+    flex-grow: 0 (padrão) → O item não cresce, mesmo que haja espaço disponível.
+    1 ou mais → O item cresce proporcionalmente para ocupar o espaço disponível.
+    Número decimal (0.5) → Permite um controle mais preciso sobre o crescimento relativo.
+
+"A propriedade flex-shrink define a capacidade de um item encolher quando o espaço disponível no container é menor que o necessário."
+    flex-shrink: 0 O item não encolhe (mantém seu tamanho mesmo que ultrapasse o container).
+    flex-shrink: 1(Padrão) O item encolhe proporcionalmente quando não há espaço suficiente.
+    Número maior que 1 → O item encolhe mais do que outros itens com valores menores.
+    Número decimal → Permite um ajuste mais preciso. Exemplo: flex-shrink: 0.5; faz o item encolher metade do que os outros.
