@@ -5,7 +5,7 @@
 display-flex = flex | block
 
 "Para criar uma margem em volta dos filhos"
-gap = ?px
+gap: ?px
 
 "Especifica a direção de exibição dos itens no contêiner flexível."
 flex-direction = row(Padrão) | column | row-reverse | column-reverse
@@ -25,3 +25,10 @@ align-items = stretch(Padrão) | flex-start | center | flex-end | baseline | nor
 
 "É semelhante a align-items, mas em vez de alinhar itens, ela alinha as linhas."
 align-content = stretch(Padrão) | center | flex-start | flex-end | apace-around | space-brteween | space-evenly
+
+/*************** COMANDOS APLICADOS NOS FILHOS **************/
+
+"A propriedade order pode alterar a ordem dos itens"
+order = (adicione o número da ordem do item)
+order: 2;
+order: 4;
