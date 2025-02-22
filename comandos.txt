@@ -46,3 +46,7 @@
 
 "A flex-basis especifica o comprimento inicial de um item"
     flex-basis: ?px // Define o comprimento inicial do item flexível para ? pixels:
+
+"A flex é uma abreviação para as propriedades flex-grow, flex-shrink flex-basis."
+    flex: (flex-grow) (flex-shrink) (flex-basis)
+    flex: 0 0 200px // Faça o item flexível não crescer (0), não encolher (0) e com um comprimento inicial de 200 pixels:
