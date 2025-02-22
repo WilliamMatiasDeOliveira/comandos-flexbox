@@ -1,0 +1,4 @@
+
+/****************  COMANDOS APLICADOS NO PAI  ***********************/
+
+display-flex = "Para deixar o pai flexivel podendo posicionar tanto em linha ou coluna"
