@@ -43,3 +43,6 @@
     flex-shrink: 1(Padrão) O item encolhe proporcionalmente quando não há espaço suficiente.
     Número maior que 1 → O item encolhe mais do que outros itens com valores menores.
     Número decimal → Permite um ajuste mais preciso. Exemplo: flex-shrink: 0.5; faz o item encolher metade do que os outros.
+
+"A flex-basis especifica o comprimento inicial de um item"
+    flex-basis: ?px // Define o comprimento inicial do item flexível para ? pixels:
