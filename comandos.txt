@@ -7,5 +7,8 @@ display-flex = flex | block
 "Para criar uma margem em volta dos filhos"
 gap = ?px
 
-"A flex-direction especifica a direção de exibição dos itens flexíveis no contêiner flexível."
-flex-direction = row | column | row-reverse | column-reverse
+"Especifica a direção de exibição dos itens no contêiner flexível."
+flex-direction = row(Padrão) | column | row-reverse | column-reverse
+
+"especifica se os itens flexíveis devem ser quebrados ou não, caso não haja espaço suficiente para eles"
+flex-wrap = nowrap(Padrão) | wrap | wrap-reverse
