@@ -16,3 +16,6 @@ flex-wrap = nowrap(Padrão) | wrap | wrap-reverse
 "É uma propriedade abreviada para definir as propriedades flex-direction e flex-wrap."
 flex-flow = (Propriedae do direction)  (propriedade do wrap)
 flex-flow = row wrap
+
+"É usada para alinhar os itens quando eles não usam todo o espaço disponível no eixo principal (horizontalmente)."
+justify-content = flex-start(Padrão) | center | flex-end | space-around | space-beteween | space-evenly
