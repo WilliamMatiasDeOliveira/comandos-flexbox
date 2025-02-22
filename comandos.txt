@@ -2,7 +2,10 @@
 /****************  COMANDOS APLICADOS NO PAI  ***********************/
 
 "Para deixar o pai flexivel podendo posicionar tanto em linha ou coluna"
-display-flex = flex ou block
+display-flex = flex | block
 
 "Para criar uma margem em volta dos filhos"
 gap = ?px
+
+"A flex-direction especifica a direção de exibição dos itens flexíveis no contêiner flexível."
+flex-direction = row | column | row-reverse | column-reverse
