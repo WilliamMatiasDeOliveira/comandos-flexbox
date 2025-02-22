@@ -32,3 +32,7 @@ align-content = stretch(Padrão) | center | flex-start | flex-end | apace-around
 order = (adicione o número da ordem do item)
 order: 2;
 order: 4;
+
+"A propriedade determina o quanto um item deve ser maior que os outros"
+flex-grow: 0(Padrão)
+flex-grow: 3 //este item tera 3 vezes o tamnho do item que tiver o valor 1
