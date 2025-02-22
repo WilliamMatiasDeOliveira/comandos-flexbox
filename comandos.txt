@@ -19,3 +19,9 @@ flex-flow = row wrap
 
 "É usada para alinhar os itens quando eles não usam todo o espaço disponível no eixo principal (horizontalmente)."
 justify-content = flex-start(Padrão) | center | flex-end | space-around | space-beteween | space-evenly
+
+"É usada para alinhar os itens quando eles não usam todo o espaço disponível no eixo cruzado (verticalmente)."
+align-items = stretch(Padrão) | flex-start | center | flex-end | baseline | normal
+
+"É semelhante a align-items, mas em vez de alinhar itens, ela alinha as linhas."
+align-content = stretch(Padrão) | center | flex-start | flex-end | apace-around | space-brteween | space-evenly
