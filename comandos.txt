@@ -1,4 +1,8 @@
 
 /****************  COMANDOS APLICADOS NO PAI  ***********************/
 
-display-flex = "Para deixar o pai flexivel podendo posicionar tanto em linha ou coluna"
+"Para deixar o pai flexivel podendo posicionar tanto em linha ou coluna"
+display-flex = flex ou block
+
+"Para criar uma margem em volta dos filhos"
+gap = ?px
